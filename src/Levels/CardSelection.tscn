@@ -10,4 +10,4 @@ script = ExtResource( 1 )
 position = Vector2( 510, 210 )
 
 [node name="Hand" parent="." instance=ExtResource( 2 )]
-position = Vector2( 510.036, 617.929 )
+position = Vector2( 525, 617.929 )
