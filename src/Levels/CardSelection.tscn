@@ -1,9 +1,11 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://src/Levels/CardSelection.gd" type="Script" id=1]
 [ext_resource path="res://src/Objects/Hand.tscn" type="PackedScene" id=2]
+[ext_resource path="res://src/Objects/Robot.tscn" type="PackedScene" id=3]
 
 [node name="CardSelection" type="Node2D"]
+position = Vector2( 0, 1 )
 script = ExtResource( 1 )
 
 [node name="CardsPosition" type="Position2D" parent="."]
@@ -11,3 +13,7 @@ position = Vector2( 510, 210 )
 
 [node name="Hand" parent="." instance=ExtResource( 2 )]
 position = Vector2( 525, 617.929 )
+
+[node name="Robot" parent="." instance=ExtResource( 3 )]
+position = Vector2( 264.827, 372.719 )
+scale = Vector2( 0.8, 0.8 )

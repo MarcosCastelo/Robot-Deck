@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://src/Controllers/PlayerRobot.tscn" type="PackedScene" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 620.174, 35.0497 )
+
+[node name="Combat" type="Node2D"]
+
+[node name="PlayerRobot" parent="." instance=ExtResource( 1 )]
+position = Vector2( 660.504, 177.186 )
+
+[node name="Ground" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ground"]
+position = Vector2( 624.911, 717.29 )
+shape = SubResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="Ground"]

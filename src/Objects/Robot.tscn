@@ -1,0 +1,47 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://src/Objects/Robot.gd" type="Script" id=1]
+[ext_resource path="res://assets/robot/pose.png" type="Texture" id=2]
+[ext_resource path="res://assets/robot/slot.png" type="Texture" id=3]
+
+[node name="Robot" type="Node2D"]
+script = ExtResource( 1 )
+slots = [ NodePath("Slot 1"), NodePath("Slot 2"), NodePath("Slot 3"), NodePath("Slot 4"), NodePath("Slot 5/Slot 5") ]
+
+[node name="Slot 1" type="Position2D" parent="."]
+position = Vector2( -4.40181, -308.624 )
+
+[node name="Slot 1" type="Sprite" parent="Slot 1"]
+z_index = 1
+texture = ExtResource( 3 )
+
+[node name="Slot 2" type="Position2D" parent="."]
+position = Vector2( 165.085, 102.025 )
+
+[node name="Slot 2" type="Sprite" parent="Slot 2"]
+z_index = 1
+texture = ExtResource( 3 )
+
+[node name="Slot 3" type="Position2D" parent="."]
+position = Vector2( 80.7414, 329.676 )
+
+[node name="Slot 3" type="Sprite" parent="Slot 3"]
+z_index = 1
+texture = ExtResource( 3 )
+
+[node name="Slot 4" type="Position2D" parent="."]
+position = Vector2( -111.769, 325.471 )
+
+[node name="Slot 4" type="Sprite" parent="Slot 4"]
+z_index = 1
+texture = ExtResource( 3 )
+
+[node name="Slot 5" type="Position2D" parent="."]
+position = Vector2( -224.594, 95.518 )
+
+[node name="Slot 5" type="Sprite" parent="Slot 5"]
+z_index = 1
+texture = ExtResource( 3 )
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 2 )
